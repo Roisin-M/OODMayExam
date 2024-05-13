@@ -27,7 +27,7 @@
         
         <!--Label and datepicker -->
         <Label Content="Booking Details" Grid.Row="0" Grid.Column="0" FontSize="14" FontWeight="Bold" VerticalAlignment="Center" HorizontalAlignment="Center"/>
-        <DatePicker Name="dp_Date" Grid.Row="0" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+        <DatePicker Name="dp_Date" Grid.Row="0" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Center" SelectedDateChanged="dp_Date_SelectedDateChanged"/>
         
         <!--listbox for booking details -->
         <ListBox Name="lbx_BookingDetails" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="3" Grid.RowSpan="5" Margin="10"/>
@@ -39,7 +39,7 @@
         <TextBox Name="tb_CustomerName" Text="Customer Name" Grid.Row="3" Grid.Column="3" VerticalAlignment="Center" HorizontalAlignment="Center" Padding="10"/>
         <TextBox Name="tb_ContactNumber" Text="Contact Number" Grid.Row="4" Grid.Column="3" VerticalAlignment="Center" HorizontalAlignment="Center" Padding="10"/>
         
-        <Button Name="btn_CustomerSearch" Content="Customer Search"  Grid.Row="5" Grid.Column="3" Grid.ColumnSpan="2" VerticalAlignment="Center" HorizontalAlignment="Center" Padding="10"/>
+        <Button Name="btn_CustomerSearch" Content="Customer Search"  Grid.Row="5" Grid.Column="3" Grid.ColumnSpan="2" VerticalAlignment="Center" HorizontalAlignment="Center" Padding="10" Click="btn_CustomerSearch_Click"/>
         
         <!--delete booking interface-->
         <Label Content="Capacity"  Grid.Row="6" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="10"/>
