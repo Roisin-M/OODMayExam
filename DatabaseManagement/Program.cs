@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using OODMayExam;
+using System.Data.Entity;
 
 namespace DatabaseManagement
 {
@@ -37,6 +38,8 @@ namespace DatabaseManagement
 
             //save changes
             db.SaveChanges();
+
+            // i have an sql server error, seems to not work on this machine 
         }
     }
 }
